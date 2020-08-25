@@ -39,6 +39,7 @@ public class Chemical_Equation_Balancer {
      * Run method for simple inspection method.
      */
     public static void runSimple() {
+        System.out.println("Please note that this chemical equation solver does not support any parentheses.");
         String reactants_String = input("Enter Reactants Side: ");
         String products_String = input("Enter Products Side: ");
         Hashtable<Integer, Hashtable<String, Integer>> reactants = parseString(reactants_String);
@@ -363,9 +364,9 @@ public class Chemical_Equation_Balancer {
                     if (!symbol.equals("")){
                         //Symbol is filled and needs to be dumped
                         try{
-                            dictionary.put(symbol, Integer.valueOf(numString));
+                            dictionary.put(symbol, Integer.valueOf(numString)+(dictionary.getOrDefault(symbol, 0)));
                         }catch (NumberFormatException exception) {
-                            dictionary.put(symbol, 1);
+                            dictionary.put(symbol, 1+(dictionary.getOrDefault(symbol, 0)));
                         }
                         symbol="";
                         numString="";
@@ -383,7 +384,7 @@ public class Chemical_Equation_Balancer {
         if (numString.equals("")){
             numString="1";
         }
-        dictionary.put(symbol, Integer.valueOf(numString));
+        dictionary.put(symbol, Integer.valueOf(numString)+(dictionary.getOrDefault(symbol, 0)));
         return dictionary;
         }
 }
