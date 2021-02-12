@@ -6,7 +6,7 @@ The first version uses a very simple inspection method that can solve simple to 
 Files: Chemical_Equation_Balancer.java
 
 ## Second Version
-The second version uses a procedural version of the simplified algebraic method (https://jaminsantiago.files.wordpress.com/2013/04/balancing-chemical-equations-easy-algebraic-method.pdf) along with polyatomic replacment that solve almost any chemical equation. This version supports parentheses().
+The second version uses a procedural version of the simplified algebraic method (https://jaminsantiago.files.wordpress.com/2013/04/balancing-chemical-equations-easy-algebraic-method.pdf) along with polyatomic replacement that solve almost any chemical equation. This version supports parentheses().
 Files: ChemicalEquationBalancer2.java
 
 ## Third Version
