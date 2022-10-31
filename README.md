@@ -1,5 +1,5 @@
 # chem-equation-balancers
-This repository has four versions of chemical equation balancers.
+This repository has four versions of chemical equation balancers. You may need to update the change the package and import paths as needed.
 
 ## First Version 
 The first version uses a very simple inspection method that can solve simple to moderate difficulty equations. This version does not support any parentheses.
